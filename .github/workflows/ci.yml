@@ -33,8 +33,11 @@ jobs:
         key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
           ${{ runner.os }}-yarn-
-    - run: |
+    - name: test start
+      id: test
+      run: |
         yarn install --frozen-lockfile
         yarn start
-        echo ${{outputs.xi}}
+    - name: get arg
+      run: echo " this arg ${{steps.test.outputs.xi}}"
 
