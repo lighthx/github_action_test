@@ -19,9 +19,9 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
-        node-version:10.x
+        node-version: '10.x'
     - run: yarn
