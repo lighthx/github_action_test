@@ -35,4 +35,5 @@ jobs:
           ${{ runner.os }}-yarn-
     - run: |
         yarn install --frozen-lockfile
+        yarn start
 
