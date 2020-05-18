@@ -36,5 +36,5 @@ jobs:
     - run: |
         yarn install --frozen-lockfile
         yarn start
-        echo ${{run.outputs.xi}}
+        echo ${{outputs.xi}}
 
