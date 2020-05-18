@@ -11,10 +11,7 @@ on:
 
 jobs:
   build:
-    with:
-      ha: 'ha ha ha'
-    outputs:
-      xi: 'xi xi'
+
 
     runs-on: ubuntu-latest
 
@@ -24,6 +21,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+        ha: 'ha ha ha'
+      outputs:
+        xi: 'xi xi'
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn cache dir)"
