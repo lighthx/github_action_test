@@ -8,6 +8,13 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+inputs:
+  ha:
+    default: 'ha ha'
+    description: 'this is test ha'
+outputs:
+  xi:
+    description: 'this is test xi'
 
 jobs:
   build:
@@ -33,3 +40,4 @@ jobs:
           ${{ runner.os }}-yarn-
     - run: |
         yarn install --frozen-lockfile
+
