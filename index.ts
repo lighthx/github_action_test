@@ -6,7 +6,6 @@ try {
     console.log(`test ${ha}`);
     const xi = 'xi ni mei';
     core.setOutput("xi", xi);
-    console.log(asdassda)
 } catch (e) {
     core.setFailed(e.message)
 }
